@@ -3,7 +3,7 @@ title: WITH-CAMERA
 email: "marcing@with-camera.com"
 description: "Photo Journal"
 url: "https://with-camera.github.io"
-baseurl: "/photorama"
+baseurl: ""
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -33,8 +33,8 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "/photorama/gallery/"  
-  - ABOUT: "/photorama/about/"
+  - GALLERY: "/gallery/"  
+  - ABOUT: "/about/"
 
 # All translation keys
 translations:
@@ -45,6 +45,12 @@ translations:
 destination:      	 ./_site
 port:             	 4000
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
 
 # Build settings
 markdown: kramdown

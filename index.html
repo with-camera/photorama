@@ -59,8 +59,8 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+<a href="{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.baseurl }}{{ image.image_path }}"></a>
 	
 				</header>	
 				</figure>
@@ -78,7 +78,7 @@ images:
 <div id="footer" role="contentinfo">
 		<ul class="soc-icons">
 
-                 {% if site.facebook_username %}
+                 {% if site.facebook_username != "" %}
 			<li>
    <a href="https://facebook.com/{{ site.facebook_username }}" style="
 color:#dddddd; target="_blank" title="Facebook">
@@ -86,7 +86,7 @@ color:#dddddd; target="_blank" title="Facebook">
                      </span>
 </a></li>
     {% endif %}
- {% if site.twitter_username %}
+ {% if site.twitter_username != "" %}
 			<li>
    <a href="https://twitter.com/{{ site.twitter_username }}" style="
 color:#dddddd; target="_blank" title="Twitter">
@@ -94,7 +94,7 @@ color:#dddddd; target="_blank" title="Twitter">
                      </span>
 </a></li>
     {% endif %}
-                {% if site.instagram_username %}
+                {% if site.instagram_username != "" %}
 			<li>
    <a href="https://instagram.com/{{ site.instagram_username }}" style="
 color:#dddddd; target="_blank" title="Instagram">
@@ -102,7 +102,7 @@ color:#dddddd; target="_blank" title="Instagram">
                      </span>
 </a></li>
     {% endif %}
-                    {% if site.flickr_username %}
+                    {% if site.flickr_username != "" %}
 						<li>
    <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
 color:#dddddd; target="_blank" title="Flickr">
@@ -110,14 +110,14 @@ color:#dddddd; target="_blank" title="Flickr">
                      </span>
  </a></li>	
      {% endif %}
-                    {% if site.deviantart_username %}
+                    {% if site.deviantart_username != "" %}
 			<li>
    <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
 color:#dddddd; target="_blank" title="DeviantArt">
 <i class="fa fa-deviantart"></i> </span>
 </a></li>	
     {% endif %}
-                    {% if site.github_username %}
+                    {% if site.github_username != "" %}
                 <li>
    <a href="https://github.com/{{ site.github_username }}" style="
 color:#dddddd; target="_blank" title="Github">
