@@ -6,7 +6,7 @@
 
                 <ul class="list-inline text-center">
 
-                    {% if site.facebook_username %}
+                    {% if site.facebook_username != "" %}
                     <li>
                         <a href="https://facebook.com/{{ site.facebook_username }}" data-toggle="tooltip" title="Facebook">
                             <span class="fa-stack fa-lg">
@@ -16,7 +16,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.twitter_username %}
+                    {% if site.twitter_username != "" %}
                     <li>
                         <a href="https://twitter.com/{{ site.twitter_username }}" data-toggle="tooltip" title="Twiiter">
                             <span class="fa-stack fa-lg">
@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.instagram_username %}
+                    {% if site.instagram_username != "" %}
                     <li>
                         <a href="https://instagram.com/{{ site.instagram_username }}" data-toggle="tooltip" title="Instagram">
                             <span class="fa-stack fa-lg">
@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.flickr_username %}
+                    {% if site.flickr_username != ""  %}
                     <li>
                         <a href="https://flickr.com/photos/{{ site.flickr_username }}" data-toggle="tooltip" title="Flickr">
                             <span class="fa-stack fa-lg">
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.deviantart_username %}
+                    {% if site.deviantart_username != "" %}
                     <li>
                         <a href="http://{{ site.deviantart_username }}.deviantart.com">
                             <span class="fa-stack fa-lg" data-toggle="tooltip" title="Deviantart">
@@ -56,7 +56,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.github_username %}
+                    {% if site.github_username != "" %}
                     <li>
                         <a href="https://github.com/{{ site.github_username }}" data-toggle="tooltip" title="Github">
                             <span class="fa-stack fa-lg">
